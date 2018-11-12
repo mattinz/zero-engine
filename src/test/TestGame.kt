@@ -31,7 +31,8 @@ fun main(args: Array<String>) {
                 MovingRectangleEntity(Vector2(2.0f, 1.0f)),
                 FollowMouseRectangleEntity(40, 4, Color.RED),
                 FollowMouseRectangleEntity(4, 40, Color.RED),
-                PlayerSquareEntity())
+                PlayerSquareEntity(),
+                PlayerSquareEntity(IInputService.InputKey.UP, IInputService.InputKey.DOWN, IInputService.InputKey.LEFT, IInputService.InputKey.RIGHT))
         override val name: String = "Test Scene"
     }
 

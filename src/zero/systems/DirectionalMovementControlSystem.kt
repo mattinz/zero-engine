@@ -27,7 +27,5 @@ class DirectionalMovementControlSystem: ISystem {
         if(engine.inputService.isButtonDown(movementControlComponent.right)) {
             movementComponent.rate.x += speed
         }
-
-        println(movementComponent)
     }
 }
