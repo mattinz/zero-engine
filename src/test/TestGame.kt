@@ -1,5 +1,9 @@
 package test
 
+import test.contexts.swing.SwingContext
+import test.entities.FollowMouseRectangleEntity
+import test.entities.MovingRectangleEntity
+import test.entities.PlayerSquareEntity
 import zero.SystemManager
 import zero.base.*
 import zero.model.Vector2
@@ -26,7 +30,8 @@ fun main(args: Array<String>) {
         override val entities: List<Entity> = listOf(MovingRectangleEntity(Vector2(1.0f, 1.0f)),
                 MovingRectangleEntity(Vector2(2.0f, 1.0f)),
                 FollowMouseRectangleEntity(40, 4, Color.RED),
-                FollowMouseRectangleEntity(4, 40, Color.RED))
+                FollowMouseRectangleEntity(4, 40, Color.RED),
+                PlayerSquareEntity())
         override val name: String = "Test Scene"
     }
 

@@ -1,9 +1,10 @@
-package test
+package test.entities
 
 import zero.base.Component
 import zero.base.Entity
 import zero.base.ISystem
 import zero.components.MovementComponent
+import zero.components.MovementControlComponent
 import zero.components.RectangleComponent
 import zero.components.TransformComponent
 import zero.model.Vector2

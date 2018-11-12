@@ -1,6 +1,7 @@
-package test
+package test.contexts.swing
 
 import zero.base.Entity
+import zero.base.IInputService
 import zero.base.IRenderable
 import zero.base.IRenderer
 import zero.components.RectangleComponent
@@ -9,14 +10,16 @@ import zero.model.Vector2
 import java.awt.Dimension
 import java.awt.Graphics
 import java.awt.MouseInfo
+import java.awt.event.KeyEvent
+import java.awt.event.KeyListener
 import javax.swing.JFrame
 import javax.swing.JPanel
 import javax.swing.SwingUtilities
 
-class SwingRenderer(preferredSize: Dimension, name:String): IRenderer {
+class SwingRenderer(context: SwingContext, preferredSize: Dimension, name:String): IRenderer {
 
     private val frame = JFrame(name)
-    private val renderPanel = RenderPanel(preferredSize)
+    private val renderPanel = RenderPanel(context, preferredSize)
 
     init {
         SwingUtilities.invokeLater {
@@ -24,6 +27,7 @@ class SwingRenderer(preferredSize: Dimension, name:String): IRenderer {
             frame.add(renderPanel)
             frame.pack()
             frame.isVisible = true
+            renderPanel.requestFocus()
         }
     }
 
@@ -38,12 +42,32 @@ class SwingRenderer(preferredSize: Dimension, name:String): IRenderer {
     }
 }
 
-private class RenderPanel(preferredSize: Dimension): JPanel() {
+private class RenderPanel(context: SwingContext, preferredSize: Dimension): JPanel() {
 
     private var entitiesToRender = listOf<Entity>()
 
     init {
         this.preferredSize = preferredSize
+        addKeyListener(object : KeyListener {
+            override fun keyTyped(e: KeyEvent?) {
+                //Do nothing
+            }
+
+            override fun keyPressed(e: KeyEvent?) {
+                val inputKey = inputKeyMap[e?.keyCode]
+                if(inputKey != null) {
+                    (context.inputService as SwingInputService).keyPressed(inputKey)
+                }
+            }
+
+            override fun keyReleased(e: KeyEvent?) {
+                val inputKey = inputKeyMap[e?.keyCode]
+                if(inputKey != null) {
+                    (context.inputService as SwingInputService).keyReleased(inputKey)
+                }
+            }
+
+        })
     }
 
     fun render(entities: List<Entity>) {
@@ -70,3 +94,14 @@ private class RenderPanel(preferredSize: Dimension): JPanel() {
         }
     }
 }
+
+private val inputKeyMap = mapOf(
+        KeyEvent.VK_UP to IInputService.InputKey.UP,
+        KeyEvent.VK_DOWN to IInputService.InputKey.DOWN,
+        KeyEvent.VK_LEFT to IInputService.InputKey.LEFT,
+        KeyEvent.VK_RIGHT to IInputService.InputKey.RIGHT,
+        KeyEvent.VK_A to IInputService.InputKey.A,
+        KeyEvent.VK_D to IInputService.InputKey.D,
+        KeyEvent.VK_S to IInputService.InputKey.S,
+        KeyEvent.VK_W to IInputService.InputKey.W
+)
