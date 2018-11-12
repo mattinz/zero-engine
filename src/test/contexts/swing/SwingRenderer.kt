@@ -91,6 +91,7 @@ private class RenderPanel(context: SwingContext, preferredSize: Dimension): JPan
                         }
                         is TextComponent -> {
                             g?.color = component.color
+                            g?.font = g?.font?.deriveFont(component.size)
                             g?.drawString(component.text, transformComponent.position.x.toInt(), transformComponent.position.y.toInt())
                         }
                     }

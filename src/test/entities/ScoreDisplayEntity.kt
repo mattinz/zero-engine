@@ -10,7 +10,7 @@ import kotlin.reflect.KClass
 class ScoreDisplayEntity: Entity() {
     override val components: MutableMap<KClass<out Component>, Component> = mutableMapOf(
             TransformComponent::class to TransformComponent(),
-            TextComponent::class to TextComponent("SCORE", 20.0f)
+            TextComponent::class to TextComponent("SCORE", 40.0f)
     )
     override val systemKeys: MutableSet<KClass<out ISystem>> = mutableSetOf()
 }
