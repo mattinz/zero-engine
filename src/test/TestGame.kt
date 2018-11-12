@@ -3,7 +3,7 @@ package test
 import test.contexts.swing.SwingContext
 import test.entities.FollowMouseRectangleEntity
 import test.entities.MovingRectangleEntity
-import test.entities.PlayerSquareEntity
+import test.entities.PlayerPaddleEntity
 import zero.SystemManager
 import zero.base.*
 import zero.model.Vector2
@@ -31,11 +31,11 @@ fun main(args: Array<String>) {
                 MovingRectangleEntity(Vector2(2.0f, 1.0f)),
                 FollowMouseRectangleEntity(40, 4, Color.RED),
                 FollowMouseRectangleEntity(4, 40, Color.RED),
-                PlayerSquareEntity(),
-                PlayerSquareEntity(IInputService.InputKey.UP, IInputService.InputKey.DOWN, IInputService.InputKey.LEFT, IInputService.InputKey.RIGHT))
+                PlayerPaddleEntity(),
+                PlayerPaddleEntity(IInputService.InputKey.UP, IInputService.InputKey.DOWN, IInputService.InputKey.LEFT, IInputService.InputKey.RIGHT))
         override val name: String = "Test Scene"
     }
 
-    val engine = TestEngine(context, scene, systemManager)
+    val engine = TestEngine(context, PongScene(), systemManager)
     engine.start()
 }

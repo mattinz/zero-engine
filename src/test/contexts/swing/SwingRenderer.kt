@@ -5,6 +5,7 @@ import zero.base.IInputService
 import zero.base.IRenderable
 import zero.base.IRenderer
 import zero.components.RectangleComponent
+import zero.components.TextComponent
 import zero.components.TransformComponent
 import zero.model.Vector2
 import java.awt.Dimension
@@ -87,6 +88,10 @@ private class RenderPanel(context: SwingContext, preferredSize: Dimension): JPan
                             g?.fillRect(transformComponent.position.x.toInt() - component.width/2,
                                     transformComponent.position.y.toInt() - component.height/2,
                                     component.width, component.height)
+                        }
+                        is TextComponent -> {
+                            g?.color = component.color
+                            g?.drawString(component.text, transformComponent.position.x.toInt(), transformComponent.position.y.toInt())
                         }
                     }
                 }

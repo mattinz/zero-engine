@@ -9,6 +9,7 @@ interface IInputService: IService {
     fun isButtonReleased(inputKey: InputKey)
 
     enum class InputKey {
+        NULL, //This can be passed in to effectively disable an input.
         A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,
         UP, DOWN, LEFT, RIGHT
     }

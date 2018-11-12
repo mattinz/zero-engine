@@ -27,7 +27,6 @@ class SwingInputService(private val context: SwingContext): IInputService {
     }
 
     fun keyPressed(inputKey: IInputService.InputKey) {
-        println(inputKey)
         currentInputs.add(inputKey)
     }
 

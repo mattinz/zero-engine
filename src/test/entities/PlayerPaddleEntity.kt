@@ -13,7 +13,7 @@ import zero.systems.MovementSystem
 import java.awt.Color
 import kotlin.reflect.KClass
 
-class PlayerSquareEntity(up: IInputService.InputKey = IInputService.InputKey.W,
+class PlayerPaddleEntity(up: IInputService.InputKey = IInputService.InputKey.W,
                          down: IInputService.InputKey = IInputService.InputKey.S,
                          left: IInputService.InputKey = IInputService.InputKey.A,
                          right: IInputService.InputKey = IInputService.InputKey.D): Entity() {
@@ -21,7 +21,7 @@ class PlayerSquareEntity(up: IInputService.InputKey = IInputService.InputKey.W,
             TransformComponent::class to TransformComponent(),
             MovementComponent::class to MovementComponent(),
             MovementControlComponent::class to MovementControlComponent(up, down, left, right),
-            RectangleComponent::class to RectangleComponent(20, 20, Color.GREEN)
+            RectangleComponent::class to RectangleComponent(20, 100, Color.BLACK)
     )
     override val systemKeys: MutableSet<KClass<out ISystem>> = mutableSetOf(DirectionalMovementControlSystem::class, MovementSystem::class)
 }
