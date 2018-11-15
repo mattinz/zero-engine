@@ -13,7 +13,7 @@ class ScoreDisplayEntity: Entity() {
     override val components: MutableMap<KClass<out Component>, Component> = mutableMapOf(
             TransformComponent::class to TransformComponent(),
             TextComponent::class to TextComponent("0 - 0", 80.0f),
-            ScoreTrackerComponent::class to ScoreTrackerComponent()
+            ScoreTrackerComponent::class to ScoreTrackerComponent(2)
     )
     override val systemKeys: MutableSet<KClass<out ISystem>> = mutableSetOf(PongScoreSystem::class)
 }

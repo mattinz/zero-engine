@@ -2,6 +2,7 @@ package test.pong
 
 import test.pong.entities.PlayerPaddleEntity
 import test.pong.entities.PongBallEntity
+import test.pong.entities.PongGoalEntity
 import test.pong.entities.ScoreDisplayEntity
 import zero.base.Entity
 import zero.base.IInputService
@@ -26,7 +27,13 @@ class PongScene: IScene {
         val pongBall = PongBallEntity()
         (pongBall.getComponent(TransformComponent::class) as TransformComponent).position = Vector2(800.0f, 450.0f)
 
+        val leftGoal = PongGoalEntity(0, 200, 900)
+        (leftGoal.getComponent(TransformComponent::class) as TransformComponent).position = Vector2(100.0f, 450.0f)
 
-        entities = listOf(leftPlayer, rightPlayer, scoreBoard, pongBall)
+        val rightGoal = PongGoalEntity(1, 200, 900)
+        (rightGoal.getComponent(TransformComponent::class) as TransformComponent).position = Vector2(1500.0f, 450.0f)
+
+
+        entities = listOf(leftPlayer, rightPlayer, scoreBoard, pongBall, leftGoal, rightGoal)
     }
 }

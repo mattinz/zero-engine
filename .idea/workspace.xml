@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91568c80-6216-4a2c-b2d8-08ac451a3d34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/TestEngine.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/pong/PongGame.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/pong/PongScoreSystem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/pong/components/ScoreAreaComponent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/pong/components/ScoreObjectComponent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/pong/components/ScoreTrackerComponent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zero/components/CircleComponent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zero/components/RectangleColliderComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/pong/entities/PongGoalEntity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/zeroEngine/META-INF/zeroEngine.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/zeroEngine/META-INF/zeroEngine.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/PongScene.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pong/PongScene.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestGame.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/contexts/swing/SwingRenderer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/contexts/swing/SwingRenderer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/entities/PlayerPaddleEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pong/entities/PlayerPaddleEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/entities/ScoreDisplayEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pong/entities/ScoreDisplayEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zero/SystemManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/zero/SystemManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zero/base/ISystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/zero/base/ISystem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zero/systems/DirectionalMovementControlSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/zero/systems/DirectionalMovementControlSystem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zero/systems/FollowMouseSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/zero/systems/FollowMouseSystem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zero/systems/MovementSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/zero/systems/MovementSystem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/pong/PongScene.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pong/PongScene.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/pong/PongScoreSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pong/PongScoreSystem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/pong/entities/ScoreDisplayEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pong/entities/ScoreDisplayEntity.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,22 +57,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kt" value="4422" />
+          <entry key="kt" value="5221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="4422" />
+          <entry key="Kotlin" value="5221" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="kt" value="49" />
+          <entry key="kt" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Kotlin" value="49" />
+          <entry key="Kotlin" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -96,10 +81,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/pong/PongScene.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="36" column="93" lean-forward="true" selection-start-line="36" selection-start-column="93" selection-end-line="36" selection-end-column="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/pong/PongGame.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="176">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
               <folding>
                 <element signature="e#19#107#0" expanded="true" />
               </folding>
@@ -108,10 +102,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/pong/PongScene.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/contexts/swing/SwingContext.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state relative-caret-position="88">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -119,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zero/SystemManager.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="176">
               <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
             </state>
           </provider>
@@ -129,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/pong/entities/ScoreDisplayEntity.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -137,20 +131,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/pong/components/ScoreTrackerComponent.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            <state relative-caret-position="88">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/pong/PongScoreSystem.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <folding>
+                <element signature="e#19#324#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/pong/entities/PongGoalEntity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+              <folding>
+                <element signature="e#28#296#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/pong/PongScoreSystem.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
-              <folding>
-                <element signature="e#19#282#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="154">
+              <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -159,34 +174,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/pong/components/ScoreAreaComponent.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
-              <caret line="4" column="90" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="19" column="71" lean-forward="true" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/pong/components/ScoreObjectComponent.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="64" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zero/components/RectangleColliderComponent.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="70" />
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -214,9 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ISystemManager.kt" />
-        <option value="$PROJECT_DIR$/src/IRenderer.kt" />
-        <option value="$PROJECT_DIR$/src/IInputService.kt" />
         <option value="$PROJECT_DIR$/src/zero/base/AbstractEngine.kt" />
         <option value="$PROJECT_DIR$/src/zero/model/Vector2.kt" />
         <option value="$PROJECT_DIR$/src/zero/components/MovementComponent.kt" />
@@ -257,14 +242,17 @@
         <option value="$PROJECT_DIR$/src/test/TestGame.kt" />
         <option value="$PROJECT_DIR$/src/test/pong/ScoreDisplayEntity.kt" />
         <option value="$PROJECT_DIR$/src/test/pong/ScoreTrackerComponent.kt" />
-        <option value="$PROJECT_DIR$/src/test/pong/entities/ScoreDisplayEntity.kt" />
         <option value="$PROJECT_DIR$/src/test/TestEngine.kt" />
         <option value="$PROJECT_DIR$/src/zero/SystemManager.kt" />
-        <option value="$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt" />
         <option value="$PROJECT_DIR$/src/test/pong/components/ScoreObjectComponent.kt" />
         <option value="$PROJECT_DIR$/src/test/pong/components/ScoreTrackerComponent.kt" />
         <option value="$PROJECT_DIR$/src/test/pong/components/ScoreAreaComponent.kt" />
+        <option value="$PROJECT_DIR$/src/test/pong/entities/PongGoalComponent.kt" />
+        <option value="$PROJECT_DIR$/src/test/pong/entities/ScoreDisplayEntity.kt" />
+        <option value="$PROJECT_DIR$/src/test/pong/entities/PongGoalEntity.kt" />
+        <option value="$PROJECT_DIR$/src/test/pong/PongScene.kt" />
         <option value="$PROJECT_DIR$/src/test/pong/PongScoreSystem.kt" />
+        <option value="$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt" />
       </list>
     </option>
   </component>
@@ -360,7 +348,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542260284733" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542315189557" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -442,7 +430,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -565,13 +553,6 @@
           <folding>
             <element signature="e#25#77#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/contexts/swing/SwingContext.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -720,55 +701,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/pong/PongGame.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#19#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zero/SystemManager.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/pong/PongScene.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/pong/entities/ScoreDisplayEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zero/components/RectangleColliderComponent.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="19" column="71" lean-forward="true" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/pong/components/ScoreTrackerComponent.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -782,17 +718,79 @@
     <entry file="file://$PROJECT_DIR$/src/test/pong/components/ScoreAreaComponent.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="90" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/pong/entities/ScoreDisplayEntity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/pong/components/ScoreTrackerComponent.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/pong/PongGame.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#19#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/contexts/swing/SwingContext.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/pong/PongScene.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="36" column="93" lean-forward="true" selection-start-line="36" selection-start-column="93" selection-end-line="36" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zero/SystemManager.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/pong/PongScoreSystem.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
+        <state relative-caret-position="44">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
           <folding>
-            <element signature="e#19#282#0" expanded="true" />
+            <element signature="e#19#324#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/pong/entities/PongGoalEntity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#28#296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
         </state>
       </provider>
     </entry>

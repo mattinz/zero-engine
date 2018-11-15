@@ -7,6 +7,7 @@ import zero.base.AbstractEngine
 import zero.base.Entity
 import zero.base.ISystem
 import zero.components.TextComponent
+import zero.components.TransformComponent
 
 class PongScoreSystem: ISystem {
 
@@ -15,13 +16,14 @@ class PongScoreSystem: ISystem {
     private val scoreAreas = mutableListOf<Entity>()
 
     override fun onStart() {
-        //
+        scoreObjects.clear()
+        scoreAreas.clear()
     }
 
     override fun update(engine: AbstractEngine, entity: Entity) {
         when {
             entity.getComponent(ScoreTrackerComponent::class) != null -> scoreBoard = entity
-            entity.getComponent(ScoreTrackerComponent::class) != null -> scoreObjects.add(entity)
+            entity.getComponent(ScoreObjectComponent::class) != null -> scoreObjects.add(entity)
             entity.getComponent(ScoreAreaComponent::class) != null -> scoreAreas.add(entity)
         }
     }
@@ -47,6 +49,19 @@ class PongScoreSystem: ISystem {
     }
 
     private fun isObjectInArea(scoreObject: Entity, scoreArea: Entity):Boolean {
-        //TODO check the positions and sizes of the objects, return true if the object is completely within the area
+
+        val objectTransform = scoreObject.getComponent(TransformComponent::class) as TransformComponent
+        val objectComponent = scoreObject.getComponent(ScoreObjectComponent::class) as ScoreObjectComponent
+
+        val areaTransform = scoreArea.getComponent(TransformComponent::class) as TransformComponent
+        val areaComponent = scoreArea.getComponent(ScoreAreaComponent::class) as ScoreAreaComponent
+
+        val objectXMax = objectTransform.position.x + objectComponent.width/2
+        val objectXMin = objectTransform.position.x - objectComponent.width/2
+
+        val areaXMax = areaTransform.position.x + areaComponent.width/2
+        val areaXMin = areaTransform.position.x - areaComponent.width/2
+
+        return objectXMax <= areaXMax && areaXMin <= objectXMin
     }
 }
