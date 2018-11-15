@@ -1,5 +1,6 @@
 package zero
 
+import test.pong.PongScoreSystem
 import zero.base.AbstractEngine
 import zero.base.Entity
 import zero.base.ISystem
@@ -17,15 +18,19 @@ class SystemManager: ISystemManager {
     init {
         systemMap[FollowMouseSystem::class] = FollowMouseSystem()
         systemMap[MovementSystem::class] = MovementSystem()
-        systemMap[DirectionalMovementControlSystem:: class] = DirectionalMovementControlSystem()
+        systemMap[DirectionalMovementControlSystem::class] = DirectionalMovementControlSystem()
+        systemMap[PongScoreSystem::class] = PongScoreSystem()
     }
 
     override fun update(engine: AbstractEngine, entities: List<Entity>) {
         //TODO: This could potentially be multi-threaded
+
+        systemMap.values.forEach { it.onStart() }
         entities.forEach { entity ->
             entity.systemKeys.forEach { key ->
                 systemMap[key]?.update(engine, entity)
             }
         }
+        systemMap.values.forEach { it.onFinish() }
     }
 }

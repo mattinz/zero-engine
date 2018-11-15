@@ -4,6 +4,7 @@ import zero.base.Entity
 import zero.base.IInputService
 import zero.base.IRenderable
 import zero.base.IRenderer
+import zero.components.CircleComponent
 import zero.components.RectangleComponent
 import zero.components.TextComponent
 import zero.components.TransformComponent
@@ -86,6 +87,12 @@ private class RenderPanel(context: SwingContext, preferredSize: Dimension): JPan
                         is RectangleComponent -> {
                             g?.color = component.color
                             g?.fillRect(transformComponent.position.x.toInt() - component.width/2,
+                                    transformComponent.position.y.toInt() - component.height/2,
+                                    component.width, component.height)
+                        }
+                        is CircleComponent -> {
+                            g?.color = component.color
+                            g?.fillOval(transformComponent.position.x.toInt() - component.width/2,
                                     transformComponent.position.y.toInt() - component.height/2,
                                     component.width, component.height)
                         }

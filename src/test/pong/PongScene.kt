@@ -1,7 +1,8 @@
-package test
+package test.pong
 
-import test.entities.PlayerPaddleEntity
-import test.entities.ScoreDisplayEntity
+import test.pong.entities.PlayerPaddleEntity
+import test.pong.entities.PongBallEntity
+import test.pong.entities.ScoreDisplayEntity
 import zero.base.Entity
 import zero.base.IInputService
 import zero.base.IScene
@@ -22,6 +23,10 @@ class PongScene: IScene {
         val scoreBoard = ScoreDisplayEntity()
         (scoreBoard.getComponent(TransformComponent::class) as TransformComponent).position = Vector2(800.0f, 100.0f)
 
-        entities = listOf(leftPlayer, rightPlayer, scoreBoard)
+        val pongBall = PongBallEntity()
+        (pongBall.getComponent(TransformComponent::class) as TransformComponent).position = Vector2(800.0f, 450.0f)
+
+
+        entities = listOf(leftPlayer, rightPlayer, scoreBoard, pongBall)
     }
 }

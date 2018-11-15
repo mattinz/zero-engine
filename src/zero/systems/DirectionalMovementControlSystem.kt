@@ -7,6 +7,10 @@ import zero.components.MovementComponent
 import zero.components.MovementControlComponent
 
 class DirectionalMovementControlSystem: ISystem {
+    override fun onStart(){}
+
+    override fun onFinish(){}
+
     override fun update(engine: AbstractEngine, entity: Entity) {
         val movementControlComponent = entity.getComponent(MovementControlComponent::class) as MovementControlComponent
         val movementComponent = entity.getComponent(MovementComponent::class) as MovementComponent

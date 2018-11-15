@@ -1,4 +1,4 @@
-package test.entities
+package test.pong.entities
 
 import zero.base.Component
 import zero.base.Entity
