@@ -22,7 +22,7 @@ class PongScene: IScene {
         (rightPlayer.getComponent(TransformComponent::class) as TransformComponent).position = Vector2(1400.0f, 450.0f)
 
         val scoreBoard = ScoreDisplayEntity()
-        (scoreBoard.getComponent(TransformComponent::class) as TransformComponent).position = Vector2(800.0f, 100.0f)
+        (scoreBoard.getComponent(TransformComponent::class) as TransformComponent).position = Vector2(800.0f, 150.0f)
 
         val pongBall = PongBallEntity()
         (pongBall.getComponent(TransformComponent::class) as TransformComponent).position = Vector2(800.0f, 450.0f)

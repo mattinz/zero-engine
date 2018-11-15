@@ -16,7 +16,7 @@ import kotlin.reflect.KClass
 class PongBallEntity: Entity() {
     override val components: MutableMap<KClass<out Component>, Component> = mutableMapOf(
             TransformComponent::class to TransformComponent(),
-            MovementComponent::class to MovementComponent(Vector2(-3.0f, 0.0f)),
+            MovementComponent::class to MovementComponent(Vector2(3.0f, 0.0f)),
             CircleComponent::class to CircleComponent(30, 30, Color.BLACK),
             ScoreObjectComponent::class to ScoreObjectComponent(30, 30)
     )
