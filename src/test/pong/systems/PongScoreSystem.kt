@@ -1,4 +1,4 @@
-package test.pong
+package test.pong.systems
 
 import test.pong.components.ScoreAreaComponent
 import test.pong.components.ScoreObjectComponent

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91568c80-6216-4a2c-b2d8-08ac451a3d34" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/contexts/swing/SwingRenderer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/contexts/swing/SwingRenderer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/pong/PongScene.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pong/PongScene.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/pong/PongScoreSystem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pong/systems/PongScoreSystem.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/pong/entities/PongGoalEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pong/entities/PongGoalEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/pong/entities/ScoreDisplayEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/pong/entities/ScoreDisplayEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zero/SystemManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/zero/SystemManager.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/src/zero/SystemManager.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
-              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -135,7 +138,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/pong/PongScoreSystem.kt">
+        <entry file="file://$PROJECT_DIR$/src/test/pong/systems/PongScoreSystem.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
               <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
@@ -170,8 +173,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+            <state relative-caret-position="330">
+              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -352,16 +355,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542315838638" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542335870447" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="test.pong.systems" />
       <recent name="test.pong.components" />
       <recent name="test.pong.entities" />
       <recent name="test.pong" />
       <recent name="test.entities" />
-      <recent name="zero.base" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\matti\Documents\Projects\zero-engine\src\test\contexts\swing" />
@@ -743,7 +746,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/pong/PongScoreSystem.kt">
+    <entry file="file://$PROJECT_DIR$/src/test/pong/systems/PongScoreSystem.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
@@ -780,7 +783,7 @@
     <entry file="file://$PROJECT_DIR$/src/zero/SystemManager.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -793,8 +796,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/pong/entities/PongBallEntity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+        <state relative-caret-position="330">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
         </state>
       </provider>
     </entry>

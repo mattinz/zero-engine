@@ -1,6 +1,6 @@
 package test.pong.entities
 
-import test.pong.PongScoreSystem
+import test.pong.systems.PongScoreSystem
 import test.pong.components.ScoreObjectComponent
 import zero.base.Component
 import zero.base.Entity

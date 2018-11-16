@@ -1,11 +1,10 @@
 package zero
 
-import test.pong.PongScoreSystem
+import test.pong.systems.PongScoreSystem
 import zero.base.AbstractEngine
 import zero.base.Entity
 import zero.base.ISystem
 import zero.base.ISystemManager
-import zero.components.MovementControlComponent
 import zero.systems.DirectionalMovementControlSystem
 import zero.systems.FollowMouseSystem
 import zero.systems.MovementSystem
